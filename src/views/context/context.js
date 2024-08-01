@@ -9,8 +9,10 @@ export const UsernameProvider = ({ children }) => {
   const [username, setUsername] = useState('');
   const [profile, setProfile] = useState('Guest');
   const [role, setRole] = useState('');
-  const [dbUrl, setDbUrl] = useState('http://localhost:5000');
-  // https://servnow-server.onrender.com
+  const [dbUrl, setDbUrl] = useState(
+    // 'http://localhost:5000'
+  'https://servnow-server.onrender.com'
+    );
   const [auth, setAuth] = useState(false);
 
   useEffect(() => {
